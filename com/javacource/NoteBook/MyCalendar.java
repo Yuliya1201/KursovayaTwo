@@ -74,13 +74,6 @@ public class MyCalendar {
                     Repeatable task = actualTasks.get(id);
                     task.setTitle(description);
                 }
-                case 3: {
-
-                }
-
-
-                case 4: {
-                }
             }
         } catch (WrongInputException e) {
             System.out.println(e.getMessage());

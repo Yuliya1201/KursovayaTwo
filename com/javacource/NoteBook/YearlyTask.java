@@ -12,4 +12,6 @@ public class YearlyTask extends Task implements Repeatable {
     public boolean checkOccurance(LocalDateTime requestedDate) {
         return getFirstDate().getYear()==requestedDate.getYear();
     }
+     Date date = new Date();
+    System.out.prinf("%1$s %2$td %2$tB %2$tY","Дата:",date);
 }

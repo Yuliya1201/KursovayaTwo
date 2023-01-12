@@ -161,7 +161,7 @@ public class MyCalendar {
     private static Repeatable createTask(int occurance, String title, String description, TaskType taskType,
                                          LocalDateTime localDateTime) throws WrongInputException {
         return switch (occurance) {
-            case 1 {
+            case 1: {
                 OncelyTask oncelyTask = new OncelyTask(title, description, taskType, localDateTime);
                 actualTasks.put(oncelyTask.getId(), oncelyTask);
                 return oncelyTask;
